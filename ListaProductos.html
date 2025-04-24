@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lista del Mario</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #000033;
+      color: #00FFCC;
+      font-family: 'Courier New', Courier, monospace;
+      background-image: linear-gradient(45deg, #000033 25%, #001144 25%, #001144 50%, #000033 50%, #000033 75%, #001144 75%, #001144 100%);
+      background-size: 40px 40px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .retro-header {
+      background-color: #FF00CC;
+      color: #000000;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 4px solid #00FFFF;
+      text-shadow: 2px 2px #000;
+      font-size: 2.5rem;
+    }
+
+    .objeto {
+      background-color: #111155;
+      color: #00FFCC;
+      border: none;
+      border-top: 4px solid #00FFFF;
+      border-bottom: 4px solid #FF00CC;
+      border-radius: 0;
+      width: 100%;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .objeto-body {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .objeto img {
+      width: 200px;
+      height: auto;
+      border: 3px solid #FF00CC;
+    }
+
+    .product-link {
+      margin-top: 10px;
+    }
+
+    .product-link a {
+      color: #00FFFF;
+      text-decoration: underline;
+      font-weight: bold;
+    }
+
+    .product-link a:hover {
+      color: #FF00CC;
+    }
+
+    .retro-footer {
+      background-color: #FF00CC;
+      color: #000000;
+      padding: 20px;
+      border-top: 4px solid #00FFFF;
+      font-family: 'Courier New', Courier, monospace;
+      text-shadow: 1px 1px #000;
+    }
+
+    .retro-footer a {
+      color: #000000;
+      text-decoration: underline;
+      font-weight: bold;
+    }
+
+    .retro-footer a:hover {
+      color: #00FFFF;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="retro-header">
+    Lista del Mario
+  </div>
+
+  <!-- Barra de navegación -->
+<nav style="background-color: #333; padding: 1rem;">
+  <ul style="list-style: none; display: flex; gap: 2rem; margin: 0; padding: 0; justify-content: center;">
+    <li><a href="#amazon" style="color: white; text-decoration: none; font-weight: bold;">Amazon</a></li>
+    <li><a href="#tecnologia" style="color: white; text-decoration: none; font-weight: bold;">Tecnología</a></li>
+    <li><a href="#Juegos" style="color: white; text-decoration: none; font-weight: bold;">Juegos</a></li>
+    <li><a href="#ropa" style="color: white; text-decoration: none; font-weight: bold;">Ropa</a></li>
+    <li><a href="#compus" style="color: white; text-decoration: none; font-weight: bold;">Compus del Mario</a></li>
+  </ul>
+</nav>
+
+<section id="amazon" style="padding: 2rem;">
+  <h2>Amazon</h2>
+
+  <div class="objeto">
+    <div class="objeto-body">
+      <img src="https://m.media-amazon.com/images/I/31%2BDgxPWXtL.jpg" alt="Producto 1" width = "100 px" height = "100 px">
+      <div>
+        <h5 class="objeto-title">Lista de Amazon</h5>
+        <p class="objeto-text">Libros y objetos que se pueden ver directamente por Amazon.</p>
+        <div class="product-link">
+          <a href="https://www.amazon.es/hz/wishlist/ls/32VBAA0ZADHT6?ref_=list_d_wl_lfu_nav_2" target="_blank">Ver producto</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+  <section id="tecnologia" style="padding: 2rem;">
+    <h2>Tecnología</h2>
+
+  <div class="objeto">
+    <div class="objeto-body">
+      <img src="https://m.media-amazon.com/images/I/81STik+9MwL.jpg" alt="Producto 2" width = "100 px" height = "100 px">
+      <div>
+        <h5 class="objeto-title">Orange PI 5</h5>
+        <p class="objeto-text">Microordenador para emulación de juegos de todas las consolas hasta la play 3.</p>
+        <div class="product-link">
+          <a href="https://es.aliexpress.com/item/1005004941850323.html" target="_blank">Ver producto</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="objeto">
+    <div class="objeto-body">
+      <img src="https://ae01.alicdn.com/kf/Sbdf5bcaa2beb45469c1c95ee4ed862e1j.jpg_640x640q90.jpg" alt="Producto 2.5" width = "100 px" height = "100 px">
+      <div>
+        <h5 class="objeto-title">Caja transparente Orange PI 5</h5>
+        <p class="objeto-text">Caja transparente Orange PI 5 con refrigeración de aire y disipadores adeshivos. Habría que comprar el que pone: <strong>Color: Option 2</strong> </p>
+        <div class="product-link">
+          <a href="https://es.aliexpress.com/item/1005005072233670.html?spm=a2g0o.productlist.main.14.22007fdaFwzV8q&algo_pvid=f381ad7f-7e1c-4a8f-8ed5-dd2dd58feed7&algo_exp_id=f381ad7f-7e1c-4a8f-8ed5-dd2dd58feed7-13&pdp_ext_f=%7B%22order%22%3A%228%22%2C%22eval%22%3A%221%22%7D&pdp_npi=4%40dis%21EUR%215.13%214.79%21%21%215.70%215.32%21%40211b441e17450984554105191ea4a3%2112000031527604285%21sea%21ES%216159016393%21X&curPageLogUid=fWznwYMtJfO2&utparam-url=scene%3Asearch%7Cquery_from%3A" target="_blank">Ver producto</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="objeto">
+    <div class="objeto-body">
+      <img src="https://thumb.pccomponentes.com/w-530-530/articles/1080/10800927/4318-intenso-premium-microsdxc-256gb-uhs-i-u1-clase-10-especificaciones.jpg" alt="Producto 3" width = "100 px" height = "100 px">
+      <div>
+        <h5 class="objeto-title">Tarjeta SD 256 GB</h5>
+        <p class="objeto-text">Tarjeta micro sd clase 10 con 256 gb de capacidad de almacenamiento con hasta 90mb por segundo</p>
+        <div class="product-link">
+          <a href="https://www.pccomponentes.com/intenso-premium-microsdxc-256gb-uhs-i-u1-clase-10" target="_blank">Ver producto</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="objeto">
+    <div class="objeto-body">
+      <img src="https://thumb.pccomponentes.com/w-530-530/articles/1087/10873539/1988-msi-pro-mp275w-e2-27-led-ips-fullhd-120hz-altavoces-adaptive-sync-0574ded1-2d7a-4cfa-809e-d65df3b3ec73.jpg" alt="Producto pantalla" width = "100 px" height = "100 px">
+      <div>
+        <h5 class="objeto-title">Monitor MSI</h5>
+        <p class="objeto-text">Monitor MSI PRO MP275W E2 27" LED IPS FullHD 120Hz Altavoces Adaptive Sync</p>
+        <div class="product-link">
+          <a href="https://www.pccomponentes.com/monitor-msi-pro-mp275w-e2-27-led-ips-fullhd-120hz-altavoces-adaptive-sync" target="_blank">Ver producto</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section id="Juegos" style="padding: 2rem;">
+  <h2>Juegos</h2>
+
+  <div class="objeto">
+    <div class="objeto-body">
+      <img src="https://img.asmedia.epimg.net/resizer/v2/BZWCK5HSNZFNDBX2BVO3BFCHNU.jpg?auth=80789a15833836c95ab3dee250e1360176535f8c9392b8ebc129992112cfd092&width=1472&height=828&smart=true" alt="Producto 3" width = "100 px" height = "100 px">
+      <div>
+        <h5 class="objeto-title">Metal Gear Solid 3</h5>
+        <p class="objeto-text">Remake del Metal Gear Solid 3, dos enlaces, uno para la página de Steam y otro para una página de reventa de claves de Steam</p>
+        <div class="product-link">
+          <a href="https://store.steampowered.com/app/2417610/METAL_GEAR_SOLID_D_SNAKE_EATER/" target="_blank">Ver producto en Steam</a>
+        </div>
+        <div class="product-link">
+          <a href="https://www.eneba.com/steam-metal-gear-solid-d-snake-eater-steam-key-pc-row?af_id=ggdeals&currency=EUR&utm_medium=af&utm_source=ggdeals" target="_blank">Ver producto desde Eneba</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section id="ropa" style="padding: 2rem;">
+  <h2>Ropa</h2>
+
+  <div class="objeto">
+    <div class="objeto-body">
+      <img src="https://assets-polinesia.imgix.net/media/catalog/product/P/o/Polinesia_PANTAL_N_CONFECCI__6425154701-200-2_5.jpg?auto=format&fit=max&w=1700&q=75" alt="Producto 4" width = "100 px" height = "100 px">
+      <div>
+        <h5 class="objeto-title">Cargo negro</h5>
+        <p class="objeto-text">Pantalón cargo negro</p>
+        <div class="product-link">
+          <a href="https://www.polinesia.es/es-es/polinesia-pantalon-confeccio-6425154701.html?color=4" target="_blank">Ver producto</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="objeto">
+    <div class="objeto-body">
+      <img src="https://assets-polinesia.imgix.net/media/catalog/product/P/o/Polinesia_PANTAL_N_DENIM_SKIN_6324154702-554-2_4.jpg?auto=format&fit=max&w=1700&q=75" alt="Producto 5" width = "100 px" height = "100 px">
+      <div>
+        <h5 class="objeto-title">Pantalón vaquero</h5>
+        <p class="objeto-text">Pantalón vaquero efecto roto claro</p>
+        <div class="product-link">
+          <a href="https://www.polinesia.es/es-es/polinesia-pantalon-denim-skin-6324154702.html?color=356" target="_blank">Ver producto</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="objeto">
+    <div class="objeto-body">
+      <img src="https://assets-polinesia.imgix.net/media/catalog/product/P/o/Polinesia_SUDADERA_CAPUCHA_LOG_6425155103-202-1_11.jpg?auto=format&fit=max&w=1700&q=75" alt="Producto 6" width = "100 px" height = "100 px">
+      <div>
+        <h5 class="objeto-title">Sudadera negra</h5>
+        <p class="objeto-text">Sudadera con capucha Polinesia logo genderless</p>
+        <div class="product-link">
+          <a href="https://www.polinesia.es/es-es/polinesia-sudadera-capucha-log-6425155103.html?color=475" target="_blank">Ver producto</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="objeto">
+    <div class="objeto-body">
+      <img src="https://assets-polinesia.imgix.net/media/catalog/product/P/u/Puma_RBD_PUM4250025-1_3.jpg?auto=format&fit=max&w=1700&q=75" alt="Producto 7" width = "100 px" height = "100 px">
+      <div>
+        <h5 class="objeto-title">Zapatillas marrones</h5>
+        <p class="objeto-text">Zapatillas Puma RBD game low white green hombre</p>
+        <div class="product-link">
+          <a href="https://www.polinesia.es/es-es/puma-rbd-pum4250025.html?color=887" target="_blank">Ver producto</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="objeto">
+    <div class="objeto-body">
+      <img src="https://cdnimg.emmiol.com/E/ACDF738TO/082d7d076494dcbf11c21e25842e01f1.jpg" alt="Producto 8" width = "100 px" height = "100 px">
+      <div>
+        <h5 class="objeto-title">Jersey de punto Negro</h5>
+        <p class="objeto-text">Jersey de punto suelto y casual con patrón de cuentas, unisex. Diseño minimalista de cuello redondo y hombros</p>
+        <div class="product-link">
+          <a href="https://es.shein.com/Unisex-Loose-Casual-Bead-Pattern-Knitted-Pullover-Minimalist-Design-Drop-Shoulder-Crew-Neck-Sweater-Warm-For-Autumn-Winter-p-46081577.html?src_identifier=st%3D4%60sc%3DJersey%20Hombre%60sr%3D0%60ps%3D2&src_module=search&src_tab_page_id=page_home1745516789250&mallCode=1&pageListType=4&imgRatio=3-4" target="_blank">Ver producto</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section id="compus" style="padding: 2rem;">
+  <h2>Compus</h2>
+
+  <div class="objeto">
+    <div class="objeto-body">
+      <img src="https://thumb.pccomponentes.com/w-300-300/articles/1072/10723274/152-corsair-3000d-rgb-airflow-cristal-templado-usb-32-blanca.jpg" alt="Compu 1" width = "100 px" height = "100 px">
+      <div>
+        <h5 class="objeto-title">Ordenador gama media-alta blanco ATX</h5>
+        <p class="objeto-text">Ordenador gama media-alta blanco ATX</p>
+        <div class="product-link">
+          <a href="https://www.pccomponentes.com/configurador/9aA8B34a5" target="_blank">Ver producto</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="objeto">
+    <div class="objeto-body">
+      <img src="https://thumb.pccomponentes.com/w-300-300/articles/1074/10749817/1325-nox-infinity-zeta-argb-m-atx-cristal-templado-usb-30-negra.jpg" alt="Compu 2" width = "100 px" height = "100 px">
+      <div>
+        <h5 class="objeto-title">Ordenador M-ATX</h5>
+        <p class="objeto-text">Ordenador gama media-alta Negro M-ATX</p>
+        <div class="product-link">
+          <a href="https://www.pccomponentes.com/configurador/263cF82aE" target="_blank">Ver producto</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+  <footer class="retro-footer text-center">
+    <p>&copy; 2025 Lista de Mario - Todos los derechos reservados</p>
+  </footer>
+
+</body>
+</html>
