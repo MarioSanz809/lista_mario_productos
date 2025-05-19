@@ -1,98 +1,130 @@
-    body {
-        background-color: #000033;
-        color: #00FFCC;
-        font-family: 'Courier New', Courier, monospace;
-        background-image: linear-gradient(45deg, #000033 25%, #001144 25%, #001144 50%, #000033 50%, #000033 75%, #001144 75%, #001144 100%);
-        background-size: 40px 40px;
-        margin: 0;
-        padding: 0;
-        }
+body {
+    background-color: #000033;
+    color: #00FFCC;
+    font-family: 'Courier New', Courier, monospace;
+    background-image: linear-gradient(45deg, #000033 25%, #001144 25%, #001144 50%, #000033 50%, #000033 75%, #001144 75%, #001144 100%);
+    background-size: 40px 40px;
+    margin: 0;
+    padding: 0;
+}
 
-        .retro-header {
-        background-color: #FF00CC;
-        color: #000000;
-        padding: 20px;
+.retro-header {
+    background-color: #FF00CC;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 4px solid #00FFFF;
+    text-shadow: 2px 2px #000;
+    font-size: 2.5rem;
+}
+
+.objeto {
+    background-color: #111155;
+    color: #00FFCC;
+    border: none;
+    border-top: 4px solid #00FFFF;
+    border-bottom: 4px solid #FF00CC;
+    border-radius: 0;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+}
+
+.objeto-body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.objeto img {
+    width: 200px;
+    height: auto;
+    border: 3px solid #FF00CC;
+}
+
+.product-link {
+    margin-top: 10px;
+}
+
+.product-link a {
+    color: #00FFFF;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.product-link a:hover {
+    color: #FF00CC;
+}
+
+.retro-footer {
+    background-color: #FF00CC;
+    color: #000000;
+    padding: 20px;
+    border-top: 4px solid #00FFFF;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 1px 1px #000;
+}
+
+.retro-footer a {
+    color: #000000;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.retro-footer a:hover {
+    color: #00FFFF;
+}
+
+.objeto-precio {
+    background-color: #000044;
+    padding: 15px;
+    border: 3px solid #00FFFF;
+    border-radius: 5px;
+    text-align: center;
+    min-width: 120px;
+}
+
+.precio-text {
+    font-weight: bold;
+    color: #FF00CC;
+    margin: 0;
+    font-size: 1rem;
+}
+
+.precio-cantidad {
+    font-size: 1.5rem;
+    color: #00FFCC;
+    margin: 5px 0 0 0;
+}
+
+/* 🔧 RESPONSIVE para pantallas pequeñas (móviles y tablets) */
+@media (max-width: 768px) {
+    .objeto-body {
+        flex-direction: column;
         text-align: center;
-        border-bottom: 4px solid #00FFFF;
-        text-shadow: 2px 2px #000;
-        font-size: 2.5rem;
-        }
+    }
 
-        .objeto {
-        background-color: #111155;
-        color: #00FFCC;
-        border: none;
-        border-top: 4px solid #00FFFF;
-        border-bottom: 4px solid #FF00CC;
-        border-radius: 0;
+    .objeto img {
         width: 100%;
-        margin: 0;
-        padding: 20px;
-        }
+        max-width: 300px;
+    }
 
-        .objeto-body {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 20px;
-        }
-
-        .objeto img {
-        width: 200px;
-        height: auto;
-        border: 3px solid #FF00CC;
-        }
-
-        .product-link {
-        margin-top: 10px;
-        }
-
-        .product-link a {
-        color: #00FFFF;
-        text-decoration: underline;
-        font-weight: bold;
-        }
-
-        .product-link a:hover {
-        color: #FF00CC;
-        }
-
-        .retro-footer {
-        background-color: #FF00CC;
-        color: #000000;
-        padding: 20px;
-        border-top: 4px solid #00FFFF;
-        font-family: 'Courier New', Courier, monospace;
-        text-shadow: 1px 1px #000;
-        }
-
-        .retro-footer a {
-        color: #000000;
-        text-decoration: underline;
-        font-weight: bold;
-        }
-
-        .retro-footer a:hover {
-        color: #00FFFF;
-        }
-        .objeto-precio {
-        background-color: #000044;
+    .retro-header {
+        font-size: 2rem;
         padding: 15px;
-        border: 3px solid #00FFFF;
-        border-radius: 5px;
-        text-align: center;
-        min-width: 120px;
+    }
+
+    .objeto-precio {
+        min-width: auto;
+        width: 100%;
     }
 
     .precio-text {
-        font-weight: bold;
-        color: #FF00CC;
-        margin: 0;
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .precio-cantidad {
-        font-size: 1.5rem;
-        color: #00FFCC;
-        margin: 5px 0 0 0;
+        font-size: 1.2rem;
     }
+}
