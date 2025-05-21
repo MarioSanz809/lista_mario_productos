@@ -14,17 +14,18 @@
     </div>
 
     <!-- Barra de navegación -->
-        <nav style="background-color: #333; padding: 1rem;">
-        <ul style="list-style: none; display: flex; gap: 2rem; margin: 0; padding: 0; justify-content: center;">
-            <li><a href="index.html" style="color: white; text-decoration: none; font-weight: bold;">Inicio</a></li>
-            <li><a href="amazon.html" style="color: white; text-decoration: none; font-weight: bold;">Amazon</a></li>
-            <li><a href="tecnologia.html" style="color: white; text-decoration: none; font-weight: bold;">Tecnología</a></li>
-            <li><a href="Juegos.html" style="color: rgb(189, 62, 62); text-decoration: none; font-weight: bold;">Juegos</a></li>
-            <li><a href="ropa.html" style="color: white; text-decoration: none; font-weight: bold;">Ropa</a></li>
-            <li><a href="outfits.html" style="color: rgb(255, 255, 255); text-decoration: none; font-weight: bold;">Outfits</a></li>
-            <li><a href="compus.html" style="color: white; text-decoration: none; font-weight: bold;">Compus del Mario</a></li>
-        </ul>
-        </nav>
+<nav class="responsive-nav">
+  <div class="nav-toggle" id="navToggle">&#9776;</div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html" >Inicio</a></li>
+    <li><a href="amazon.html">Amazon</a></li>
+    <li><a href="tecnologia.html">Tecnología</a></li>
+    <li><a href="Juegos.html" class="active">Juegos</a></li>
+    <li><a href="ropa.html">Ropa</a></li>
+    <li><a href="outfits.html">Outfits</a></li>
+    <li><a href="compus.html">Compus del Mario</a></li>
+  </ul>
+</nav>
 
     <section id="Juegos" style="padding: 2rem;">
     <h1>Juegos</h1>
@@ -106,5 +107,17 @@
         </div>
         </div>
     </div>
+
+    <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const navToggle = document.getElementById('navToggle');
+    const nav = document.querySelector('.responsive-nav');
+
+    navToggle.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  });
+</script>
+
 
     </section>
